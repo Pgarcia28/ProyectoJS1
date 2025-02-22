@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto App</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload="cargarApp()">
+    <header class="cabecero">
+        <div class="presupuesto">
+            <h1>Presupuesto Disponible</h1>
+            <div class="presupuesto_valor" id="presupuesto">$0.00 MXN</div>
+            <div class="presupuesto_detalles">
+                <div class="presupuesto_ingreso">
+                    <span class="titulo">INGRESOS</span>
+                    <span class="valor" id="ingresos">$0.00 MXN</span>
+                </div>
+                <div class="presupuesto_egreso">
+                    <span class="titulo">EGRESOS</span>
+                    <span class="valor" id="egresos">$0.00 MXN</span>
+                    <span class="porcentaje" id="porcentaje">0%</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="agregar">
+        <div class="agregar_contenedor">
+            <select id="tipo">
+                <option value="ingreso" selected>+ Ingreso</option>
+                <option value="egreso">- Egreso</option>
+            </select>
+            <input type="text" id="descripcion" placeholder="Agregar descripción">
+            <input type="number" id="valor" placeholder="Valor">
+            <button class="agregar_btn" onclick="agregarDato()">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </button>
+        </div>
+    </section>
+
+    <main class="contenedor">
+        <section class="ingreso">
+            <h2 class="ingreso_titulo">INGRESOS</h2>
+            <div id="lista-ingresos"></div>
+        </section>
+        <section class="egreso">
+            <h2 class="egreso_titulo">EGRESOS</h2>
+            <div id="lista-egresos"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
