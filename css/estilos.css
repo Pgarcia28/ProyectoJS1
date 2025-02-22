@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    color: white;
+    text-align: center;
+}
+
+.cabecero {
+    height: 40vh;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: url(fondo.png), #7b4397;
+    background: url(fondo.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+    background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presupuesto {
+    padding: 20px;
+  
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.presupuesto h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.presupuesto_valor {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.presupuesto_detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.presupuesto_ingreso, .presupuesto_egreso {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 350px;
+}
+
+.presupuesto_ingreso {
+    background: #28B9B5;
+}
+
+.presupuesto_egreso {
+    background: #FF5049;
+}
+
+.porcentaje {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.agregar {
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agregar select, .agregar input {
+    margin: 5px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.agregar_btn {
+    background-color: #28B9B5;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.agregar_btn:hover {
+    background-color: #1e807c;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.ingreso, .egreso {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: darkgray;
+}
+
+h2 {
+    font-size: 18px;
+    color: #444;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.elemento {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+.elemento-valor {
+    font-weight: bold;
+}
+
+.elemento-eliminar button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ingreso_titulo { color: #28B9B5; }
+.egreso_titulo { color: #FF5049; }
+
